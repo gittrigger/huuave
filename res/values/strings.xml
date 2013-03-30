@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Huuave</string>
+    <string name="cp">content://com.havenskys.huuave</string>
+
+</resources>

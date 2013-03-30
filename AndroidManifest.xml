@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.havenskys.huuave"
+      android:versionCode="1"
+      android:versionName="1.2243">
+
+
+
+<uses-sdk android:minSdkVersion="7" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:allowTaskReparenting="true">
+
+	       
+ 
+	<activity android:name=".In" 
+                  android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:multiprocess="true" android:launchMode="singleTop">
+           <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+
+        <activity android:name="com.havenskys.galaxy.Motion" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:multiprocess="true" android:launchMode="singleTop" />
+        <activity android:name="com.havenskys.galaxy.Lookup" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.havenskys.galaxy.Detail" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.havenskys.galaxy.Space" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service android:name="com.havenskys.galaxy.AutomaticService" />
+
+        <provider android:name="com.havenskys.galaxy.DataProvider" android:authorities="com.havenskys.huuave" />
+        <receiver android:name="com.havenskys.galaxy.IntentReceiver" />
+
+    </application>
+
+
+
+<!-- permission -->
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<uses-permission android:name="android.permission.RECEIVE_WAP_PUSH"></uses-permission>
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"></uses-permission>
+<uses-permission android:name="android.permission.READ_HISTORY_BOOKMARKS"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_HISTORY_BOOKMARKS"></uses-permission>
+<uses-permission android:name="android.permission.SET_ALWAYS_FINISH"></uses-permission>
+
+<!--
+<uses-permission android:name="android.permission.BATTERY_STATS"></uses-permission>
+<uses-permission android:name="android.permission.SET_ORIENTATION"></uses-permission>
+<uses-permission android:name="android.permission.DELETE_CACHE_FILES"></uses-permission>
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>
+<uses-permission android:name="android.permission.SET_ACTIVITY_WATCHER"></uses-permission>
+<uses-permission android:name="android.permission.HARDWARE_TEST"></uses-permission>
+<uses-permission android:name="android.permission.MANAGE_APP_TOKENS"></uses-permission>
+<uses-permission android:name="android.permission.CLEAR_APP_CACHE"></uses-permission>
+
+<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+<uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_CALENDAR"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_CALENDAR"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_SMS"></uses-permission>
+<uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+<uses-permission android:name="android.permission.DISABLE_KEYGUARD"></uses-permission>
+<uses-permission android:name="android.permission.GET_PACKAGE_SIZE"></uses-permission>
+<uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
+<uses-permission android:name="android.permission.GLOBAL_SEARCH"></uses-permission>
+
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" ></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" ></uses-permission>
+-->
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" ></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" ></uses-permission>
+
+
+
+
+
+
+
+
+</manifest> 
